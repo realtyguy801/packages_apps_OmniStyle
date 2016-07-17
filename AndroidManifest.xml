@@ -31,6 +31,16 @@
 		</activity>
 
 		<activity
+			android:name=".weather_weezle"
+			android:label="Weezle" >
+			<intent-filter>
+				<action android:name="org.omnirom.WeatherIconPack" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity
 			android:name=".nature"
 			android:label="Nature" >
 			<intent-filter>
