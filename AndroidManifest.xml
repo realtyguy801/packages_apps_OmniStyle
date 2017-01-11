@@ -91,7 +91,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 	<activity
 	    android:name=".nitrogen"
-	    android:label="@string/header_pack_label1" >
+	    android:label="Nitrogen" >
 	    <intent-filter>
 		<action android:name="org.omnirom.DaylightHeaderPack1" />
 
