@@ -22,10 +22,12 @@ entry can only be only one of hour or day/month type
 day_header entries have a higher priority then hour entries -->
 
 <daylight_headers>
-    <hour_header hour="6" image="screwd_sunrise" />
-    <hour_header hour="9" image="screwd_morning" />
-    <hour_header hour="11" image="screwd_noon" />
-    <hour_header hour="13" image="screwd_afternoon" />
-    <hour_header hour="19" image="screwd_sunset" />
-    <hour_header hour="21" image="screwd_night" />
+    <hour_header hour="6" image="notifhead_screwd_sunrise_hd" />
+    <hour_header hour="9" image="notifhead_screwd_morning_hd" />
+    <hour_header hour="11" image="notifhead_screwd_noon_hd" />
+    <hour_header hour="13" image="notifhead_screwd_afternoon_hd" />
+    <hour_header hour="19" image="notifhead_screwd_sunset_hd" />
+    <hour_header hour="21" image="notifhead_screwd_night_hd" />
+    <day_header day="25" month="12" image="notifhead_screwd_christmas_hd" />
+    <day_header day="31" month="12" image="notifhead_screwd_newyearseve_hd" />
 </daylight_headers>
