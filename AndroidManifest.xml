@@ -121,7 +121,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 		 <activity
 			android:name=".colorz"
-			android:label="Random with smart color" >
+			android:label="Colorful" >
+			<intent-filter>
+				<action android:name="org.omnirom.DaylightHeaderPack1" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		 <activity
+			android:name=".colorz_smart"
+			android:label="Textures with smart color" >
 			<intent-filter>
 				<action android:name="org.omnirom.DaylightHeaderPack1" />
 
