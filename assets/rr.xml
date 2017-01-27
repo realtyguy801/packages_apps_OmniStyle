@@ -32,10 +32,9 @@ day_header entries have a higher priority then hour entries -->
     <hour_header hour="16" image="resurrectionremix1" />
     <hour_header hour="17" image="resurrectionremix2" />
     <hour_header hour="18" image="getr" />
-    <hour_header hour="19" image="getrp1" />
-    <hour_header hour="20" image="getr_paper" />
-    <hour_header hour="21" image="getrpm" />
-    <hour_header hour="22" image="getrpm1" />
-    <hour_header hour="23" image="getrs" />
-    <hour_header hour="24" image="paper" />
+    <hour_header hour="19" image="getr_paper" />
+    <hour_header hour="20" image="getrpm" />
+    <hour_header hour="21" image="getrpm1" />
+    <hour_header hour="22" image="getrs" />
+    <hour_header hour="23" image="paper" />
 </daylight_headers>
