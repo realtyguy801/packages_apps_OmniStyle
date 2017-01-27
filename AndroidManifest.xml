@@ -159,6 +159,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</intent-filter>
 		</activity>
 
+		<activity
+			android:name=".rr_smart"
+			android:label="Remix with smart color" >
+			<intent-filter>
+				<action android:name="org.omnirom.DaylightHeaderPack1" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
         <activity
             android:name=".wavvy"
             android:label="Wavvy by Travis Hall" >
