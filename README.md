@@ -74,3 +74,10 @@ only valid in random or sequential mode
 
 ```
 Label will be the name your pack will appear when selecting
+
+Images size should have a 4:1 ratio. Images will be resized
+to fit and cropped as necessary.
+
+Images are drawn behind quickbar in collapsed state so you 
+should avoid to use too bright colors in that area else
+the quickbar images will become hard to see.
