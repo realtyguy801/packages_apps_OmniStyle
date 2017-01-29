@@ -70,6 +70,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
 
         <activity
+            android:name=".weather_gs6"
+            android:label="Galaxy S6" >
+            <intent-filter>
+                <action android:name="org.omnirom.WeatherIconPack" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".weather_vclouds"
             android:label="VClouds" >
             <intent-filter>
