@@ -129,55 +129,55 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             </intent-filter>
         </activity>
 
-		 <activity
-			android:name=".colorz"
-			android:label="Colorful" >
-			<intent-filter>
-				<action android:name="org.omnirom.DaylightHeaderPack1" />
+        <activity
+            android:name=".colorz"
+            android:label="Colorful" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
 
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-		 <activity
-			android:name=".colorz_smart"
-			android:label="Textures with smart color" >
-			<intent-filter>
-				<action android:name="org.omnirom.DaylightHeaderPack1" />
+        <activity
+            android:name=".colorz_smart"
+            android:label="Textures with smart color" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
 
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-		 <activity
-			android:name=".camo"
-			android:label="Camouflage" >
-			<intent-filter>
-				<action android:name="org.omnirom.DaylightHeaderPack1" />
+        <activity
+            android:name=".camo"
+            android:label="Camouflage" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
 
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-		<activity
-			android:name=".rr"
-			android:label="Remix" >
-			<intent-filter>
-				<action android:name="org.omnirom.DaylightHeaderPack1" />
+        <activity
+            android:name=".rr"
+            android:label="Remix" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
 
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-		<activity
-			android:name=".rr_smart"
-			android:label="Remix with smart color" >
-			<intent-filter>
-				<action android:name="org.omnirom.DaylightHeaderPack1" />
+        <activity
+            android:name=".rr_smart"
+            android:label="Remix with smart color" >
+            <intent-filter>
+                <action android:name="org.omnirom.DaylightHeaderPack1" />
 
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".wavvy"
