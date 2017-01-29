@@ -80,6 +80,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         </activity>
 
         <activity
+            android:name=".weather_gnw"
+            android:label="Google Now" >
+            <intent-filter>
+                <action android:name="org.omnirom.WeatherIconPack" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".weather_vclouds"
             android:label="VClouds" >
             <intent-filter>
