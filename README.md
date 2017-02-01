@@ -91,6 +91,14 @@ should avoid to use too bright colors in that area else
 the quickbar images will become hard to see.
 
 
+## Contributors ##
++ Travis Hall
++ Syed Sajid
+
+TODO
+-----
+Show pack properties like type (random, list, time context) and change interval
+
 Omni wallpapers
 -----
 Using Picasso
@@ -101,6 +109,7 @@ http://square.github.io/picasso/
 + PartimusPrime
 
 ## Contributing wallpapers ##
+Put images files into drawable-nodpi
 ```xml
 assets/wallpaper.xml
 ```
