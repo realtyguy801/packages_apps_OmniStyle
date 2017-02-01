@@ -28,6 +28,7 @@ import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,7 +61,7 @@ public class BrowseHeaderActivity extends Activity {
     private static final String DEFAULT_HEADER_PACKAGE = "com.android.systemui";
     private static final String STATUS_BAR_CUSTOM_HEADER_IMAGE = "status_bar_custom_header_image";
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private List<DaylightHeaderInfo> mHeadersList;
     private Resources mRes;
     private String mPackageName;
@@ -71,6 +72,9 @@ public class BrowseHeaderActivity extends Activity {
     private List<String> mLabelList;
     private HeaderListAdapter mHeaderListAdapter;
     private ProgressBar mProgress;
+    private TextView mCreatorName;
+    private String mCreatorLabel;
+    private String mCreator;
 
     private class DaylightHeaderInfo {
         public int mType = 0;
@@ -132,6 +136,8 @@ public class BrowseHeaderActivity extends Activity {
 
         mProgress = (ProgressBar) findViewById(R.id.browse_progress);
         mHeaderSelect = (Spinner) findViewById(R.id.package_select);
+        mCreatorName = (TextView) findViewById(R.id.meta_creator);
+        mCreatorLabel = getResources().getString(R.string.header_creator_label);
         mHeaderMap = new HashMap<String, String>();
         mLabelList = new ArrayList<String>();
         getAvailableHeaderPacks(mHeaderMap);
@@ -145,6 +151,8 @@ public class BrowseHeaderActivity extends Activity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String label = mLabelList.get(position);
                 loadHeaderPackage(mHeaderMap.get(label));
+                mCreatorName.setVisibility(TextUtils.isEmpty(mCreator) ? View.GONE : View.VISIBLE);
+                mCreatorName.setText(mCreatorLabel + mCreator);
                 mHeaderListAdapter.notifyDataSetChanged();
             }
 
@@ -238,6 +246,7 @@ public class BrowseHeaderActivity extends Activity {
 
     private void loadHeaders() throws XmlPullParserException, IOException {
         mHeadersList.clear();
+        mCreator = null;
         InputStream in = null;
         XmlPullParser parser = null;
 
@@ -319,6 +328,9 @@ public class BrowseHeaderActivity extends Activity {
                 if (headerInfo.mImage != null) {
                     mHeadersList.add(headerInfo);
                 }
+            } else if (name.equalsIgnoreCase("meta_data")) {
+                mCreator = parser.getAttributeValue(null, "creator");
+                if (DEBUG) Log.i(TAG, "creator = " + mCreator);
             }
         } while ((eventType = parser.next()) != XmlPullParser.END_DOCUMENT);
         if (DEBUG) Log.i(TAG, "loaded size = " + mHeadersList.size());
