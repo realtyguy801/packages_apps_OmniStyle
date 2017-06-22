@@ -23,6 +23,7 @@ day_header entries have a higher priority then hour entries -->
     <hour_header hour="6" image="pitchblacks" />
     <hour_header hour="8" image="pitchblacks1" />
     <hour_header hour="9" image="pitchblacks2" />
+    <hour_header hour="10" image="pitchskull" />
     <hour_header hour="11" image="resurrectionremix1" />
     <hour_header hour="13" image="resurrectionremix2" />
     <hour_header hour="15" image="getrpm" />
